@@ -14,6 +14,7 @@ pipeline{
         stage("deploy"){
             steps{
                 sh 'pwd'
+                sh 'sudo chown -R jenkins:jenkins ../../../../www/html/'
                 sh 'mv TECHNICAL_ASSIGNMENT ../../../../www/html/'
             }
         }     
