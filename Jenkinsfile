@@ -14,7 +14,7 @@ pipeline{
         stage("deploy"){
             steps{
                 sh 'pwd'
-                sh 'mv jj1/* ../../../../www/html/'
+                sh 'mv TA/* ../../../../www/html/'
             }
         }     
     }
