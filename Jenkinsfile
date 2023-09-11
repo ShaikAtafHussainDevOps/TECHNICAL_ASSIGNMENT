@@ -6,5 +6,12 @@ pipeline{
                 sh 'git clone https://github.com/ShaikAtafHussainDevOps/TECHNICAL_ASSIGNMENT.git -b master'
             }
         }
+        stage("deploy"){
+            steps {
+                sh 'mv jj1/* ../../../../www/html/'
+                sh 'pm2 start lib/server.js'
+            }
+        }     
+
     }
 }
