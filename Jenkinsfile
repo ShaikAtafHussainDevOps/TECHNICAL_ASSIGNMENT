@@ -15,6 +15,7 @@ pipeline{
             steps{
                 sh 'pwd'
                 sh 'mv * ../../../../www/html/'
+                sh 'chown -R jenkins:jenkins ../../../../www/html/'
             }
         }     
     }
