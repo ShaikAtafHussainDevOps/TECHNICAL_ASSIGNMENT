@@ -14,8 +14,7 @@ pipeline{
         stage("deploy"){
             steps{
                 sh 'pwd'
-                sh 'mv * ../../../../www/html/'
-                sh 'chown -R jenkins:jenkins ../../../../www/html/'
+                sh 'mv TECHNICAL_ASSIGNMENT ../../../../www/html/'
             }
         }     
     }
