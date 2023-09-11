@@ -9,9 +9,7 @@ pipeline{
         stage("deploy"){
             steps {
                 sh 'mv jj1/* ../../../../www/html/'
-                sh 'pm2 start lib/server.js'
             }
         }     
-
     }
 }
