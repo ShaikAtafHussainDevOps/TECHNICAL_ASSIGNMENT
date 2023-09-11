@@ -6,11 +6,11 @@ pipeline{
                 sh 'git clone https://github.com/ShaikAtafHussainDevOps/TECHNICAL_ASSIGNMENT.git -b master'
             }
         }
-        /*stage("deploy"){
+        stage("deploy"){
             steps{
                 sh 'pwd'
                 sh 'mv jj1/* ../../../../www/html/'
             }
-        }*/     
+        }     
     }
 }
